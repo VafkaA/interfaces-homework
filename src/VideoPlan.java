@@ -1,8 +1,8 @@
 public class VideoPlan extends Subscription implements Billable, Pausable, Sharable {
-   int maxProfiles;
+    private int maxProfiles;
    String[] members = new String[maxProfiles];
    PauseWindow[] pauses = new PauseWindow[5];
-   int date;
+    private  int date;
 
     public VideoPlan(String id, String title, float monthlyPrice, int startDate, boolean active, int maxProfiles, String[] members, PauseWindow[] pauses, int date) {
         super(id, title, monthlyPrice, startDate, active);

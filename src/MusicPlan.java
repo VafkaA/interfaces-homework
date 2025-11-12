@@ -1,17 +1,16 @@
 public class MusicPlan extends Subscription implements Billable, TrialSupport  {
-    int date;
-    float forMonth;
+    private int date;
+    private float forMonth;
     private int trialDays;
 
     public MusicPlan(String id, String title, float monthlyPrice, int startDate, boolean active, int date, float forMonth, int trialDays) {
         super(id, title, monthlyPrice, startDate, active);
         this.date = date;
         this.forMonth = forMonth;
-        this.trialDays = trialDays;
+        this.trialDays = 14;
     }
     @Override
     public int trialDays(){
-        trialDays = 14;
         return trialDays;
     }
     @Override

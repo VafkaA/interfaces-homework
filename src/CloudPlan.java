@@ -1,7 +1,7 @@
 public class CloudPlan extends Subscription implements Billable{
-    int storageTb;
-    int baseTbPrice;
-    int extraTbPrice;
+    private int storageTb;
+    private int baseTbPrice;
+    private int extraTbPrice;
 
     public CloudPlan(String id, String title, float monthlyPrice, int startDate, boolean active, int storageTb, int baseTbPrice, int extraTbPrice) {
         super(id, title, monthlyPrice, startDate, active);
